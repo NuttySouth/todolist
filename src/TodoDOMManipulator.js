@@ -1,5 +1,5 @@
 
-export const toDoItemDOMFactory = (toDoObject) =>{
+export const toDoItemDOMFactory = (toDoObject, id) =>{
     const toDoItem = document.createElement('div');
     const title = document.createElement('p');
     const desc = document.createElement('p');
@@ -20,6 +20,7 @@ export const toDoItemDOMFactory = (toDoObject) =>{
     check.type = 'checkbox';
     deleteBtn.classList.add('delete-btn');
     toDoItem.classList.add('item');
+    toDoItem.setAttribute('id', id);
     title.classList.add('item-title');
     desc.classList.add('item-desc');
     prio.classList.add('item-prio');
