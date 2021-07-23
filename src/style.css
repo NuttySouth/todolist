@@ -9,6 +9,10 @@ body {
   margin: 40px;
 }
 
+.form-container {
+  display: none;
+}
+
 .item-checkbox {
   grid-column: 1 / 2;
   grid-row: 1 / 2;

@@ -14,7 +14,6 @@ export const toDoItemDOMFactory = (toDoObject, id) =>{
     prio.textContent = `Priority: ${toDoObject.getPriority}`;
     remainTime.textContent = `Remaining Time: ${toDoObject.timeToDate}`;
     deleteBtn.textContent = "Delete";
-    deleteBtn.value = toDoObject.getName;
 
 
     check.type = 'checkbox';
